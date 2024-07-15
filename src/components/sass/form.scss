@@ -1,0 +1,21 @@
+.user-form{
+    padding: 120px 0;
+    table{
+        font-size: 1.2rem;
+    }
+    .form-group{
+        margin-bottom: 20px;
+        input{
+            width: 75vw;
+            font-size: 1.2rem;
+            @media screen and (max-width:767px) {
+                width: 90vw;
+            };
+        }
+        label{
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+    }
+}

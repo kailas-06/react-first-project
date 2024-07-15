@@ -1,0 +1,49 @@
+.banner-owl img{
+    height: 100vh;
+}
+.banner-owl .owl-nav .owl-prev,.banner-owl .owl-nav .owl-next {
+    margin-top: 10px;
+    -webkit-tap-highlight-color: transparent;
+    bottom: 30px;
+    position: absolute;
+    top: 0%;
+    font-size: 50px !important;
+    transform: translateX(-50%);
+    color: #fff !important;
+  }
+  .banner-owl .owl-nav .owl-prev{
+    left: 10px;
+  }
+  .banner-owl .owl-nav .owl-next{
+    right: 0;
+  }
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent !important;
+    color: #FFF;
+    text-decoration: none;
+  }
+  .owl-theme .owl-nav{
+    margin: 0 !important;
+  }
+.banner-text{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: #fff;
+}
+.heading1{
+  text-transform: uppercase;
+}
+.item.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.4);
+  height: 100%;
+  width: 100%;
+}

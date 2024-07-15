@@ -1,0 +1,42 @@
+.section-footer {
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 5rem;
+        @media screen and (max-width:767px) {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 50px;
+        }
+        @media screen and (max-width:575px) {
+            grid-template-columns: 1fr;
+
+        }
+        .footer-sec{
+            .heading5{
+                font-size: 2rem;
+            }
+            .footer-wrap {
+                display: grid;
+                row-gap: 10px;
+
+                .footer-nav {
+                    color: $white-color;
+                    font-size: 1.2rem;
+                    letter-spacing: 0.5px;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+    .footer-terms{
+        .f-copyRight{
+            font-size: 1.2rem;
+        }
+    }
+}

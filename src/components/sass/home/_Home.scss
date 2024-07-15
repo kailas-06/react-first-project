@@ -1,0 +1,79 @@
+
+p {
+  font-size: 1rem;
+}
+
+.navbar.main-navbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100dvw;
+  right: 0;
+  left: 0;
+  height: 70px;
+  padding: 0.5rem 0 0.75rem;
+
+  .navbar-brand {
+    @include font-size(18px);
+    padding: 0 1.5rem 0 0;
+    margin-right: 0 !important;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: #fff !important;
+     @include font-size(18px);
+      padding: 0 1rem 0 0;
+
+      &.active {
+        color: red !important;
+      }
+    }
+  }
+  @media screen and (max-width:767px) {
+    .collapse{
+      padding: 40px 0;
+    }
+  }
+}
+
+.gallery-sec{
+  .gallery-card{
+    display: flex;
+    >div{
+      margin-bottom: 20px;
+    }
+    .hover-bg{
+      position: relative;
+      .gallery-img{
+        width: 100%;
+      }
+      .hover-txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 1.4rem;
+        display: none;
+      }
+      &:hover{
+        &::before{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(0,0,0,0.4);
+          z-index: 2;
+        }
+        .hover-txt{
+          display: block;
+          z-index: 9;
+        }
+      }
+    }
+  }
+
+}

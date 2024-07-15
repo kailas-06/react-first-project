@@ -1,0 +1,89 @@
+
+html {
+    font-size: 16px;
+    // font-size: 62.5%;
+    /* changes a default 16px font size to 10px */
+    font-family: "Noto Sans", sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+  }
+.bg-blue{
+    background-color: blue;
+}
+.bg-black{
+    background-color: #000000;
+}
+.bg-light-blue{
+    background-color: #dcdce7;
+}
+
+
+.color-white{
+    color: #ffffff
+}
+.color-black{
+    color: #000000
+}
+.color-dark-blue{
+    color: #37517e;
+}
+.color-accent-blue{
+    color: #47b2e4;
+}
+
+
+.heading1{
+    font-size: 4rem
+}
+.heading2{
+    font-size: 3rem
+
+}
+.heading3{
+   font-size: 3.2rem
+}
+
+.heading4{
+    font-size: 2.5rem
+}
+.heading5{
+   font-size: 2rem
+}
+.heading6{
+    font-size: 1rem;
+}
+.heading{
+    font-size: 4rem;
+    color: #37517e;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.cards{
+    background-color: #fff;
+    padding: 25px 20px;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    text-align: center;
+    .icon-wrap{
+        text-align: center;
+        margin-bottom: 10px;
+        i{
+            font-size: 44px;
+            color: #47b2e4;
+        }
+    }
+    &:hover{
+        transform: translateY(-10px);
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+        .heading5{
+            color:#47b2e4
+        }
+    }
+}
